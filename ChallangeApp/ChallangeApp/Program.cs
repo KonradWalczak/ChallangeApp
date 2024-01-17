@@ -1,16 +1,18 @@
-﻿var name = "Konrad";
-var sex = "M";
-var age = 15;
+﻿int number = 2143432137;
+string numberAsString = number.ToString();
+char[] letters = numberAsString.ToArray();
 
-if (sex == "K" && age < 30)
+for (int i = 0; i < 10; i++)
 {
-    Console.WriteLine("Women under 30");
-}
-else if (name == "Ewa" && age == 30)
-{
-    Console.WriteLine("Ewa, 30 years old");
-}
-else if (sex == "M" && age<18)
-{
-    Console.WriteLine("Underaged male");
+    var counter = 0;
+
+    foreach (char letter in letters)
+    {
+        if (i == letter - '0')
+        {
+            counter++;
+        }
+        
+    }
+    Console.WriteLine(i + " => " + counter);
 }

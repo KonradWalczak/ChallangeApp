@@ -28,5 +28,10 @@
         {
             this.pointsEmployee.Add(number);
         }
+
+        public void RemovePoints(int number)
+        {
+            this.pointsEmployee.Add(-number);
+        }
     }
 }

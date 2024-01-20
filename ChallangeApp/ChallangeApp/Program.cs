@@ -1,18 +1,13 @@
-﻿int number = 2143432137;
-string numberAsString = number.ToString();
-char[] letters = numberAsString.ToArray();
+﻿using ChallangeApp;
 
-for (int i = 0; i < 10; i++)
-{
-    var counter = 0;
+User user1 = new User("Adam", "haselko2137");
+User user2 = new User("Monika", "haslo123");
+User user3 = new User("Zuzia", "3232321313");
+User user4 = new User("Damian", "123");
 
-    foreach (char letter in letters)
-    {
-        if (i == letter - '0')
-        {
-            counter++;
-        }
-        
-    }
-    Console.WriteLine(i + " => " + counter);
-}
+user1.AddScore(5);
+user1.AddScore(2);
+var result = user1.Result;
+Console.WriteLine(result);
+
+
